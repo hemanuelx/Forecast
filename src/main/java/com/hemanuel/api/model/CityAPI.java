@@ -2,9 +2,9 @@ package com.hemanuel.api.model;
 
 public class CityAPI {
 	private int id;
-	private String name;
-	private String country;	
-	private CoordinateAPI coordinate;
+	private String name;		
+	private CoordinateAPI coord;
+	private String country;
 	
 	public int getId() {
 		return id;
@@ -18,17 +18,16 @@ public class CityAPI {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public CoordinateAPI getCoord() {
+		return coord;
+	}
+	public void setCoord(CoordinateAPI coord) {
+		this.coord = coord;
+	}
 	public String getCountry() {
 		return country;
 	}
 	public void setCountry(String country) {
 		this.country = country;
 	}
-	public CoordinateAPI getCoordinate() {
-		return coordinate;
-	}
-	public void setCoordinate(CoordinateAPI coordinate) {
-		this.coordinate = coordinate;
-	}
-		
 }
